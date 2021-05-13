@@ -1,3 +1,5 @@
+{% load bootstrap4%}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,8 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    {% bootstrap_css %}
 </head>
 <body>
-    <h1>Contato</h1>
+    <div class"conteiner">
+        <h1>Contato</h1>
+        {% bootstrap_messages %}
+
+        <form action="{% url 'contato' %}" method='post' class= "form"autocomplete="off"> 
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            {% buttons %}
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                {% endbuttons %}
+        </form>
+    </div>
+    {% bootstrap_javascript jquery='full' %}
 </body>
 </html>
