@@ -1,9 +1,14 @@
 from django.shortcuts import render
 from .forms import ContatoForm, ProdutoModelForm
 from django.contrib import messages
+from .models import Produto
 
 def index (request):
-    return render(request, 'index.html')
+    context = {
+        'produtos': Produto.objects.all()
+    }
+    #print(f'Produtos = {Produto.objects.all()}')
+    return render(request, 'index.html', context)
 
 def contato (request):
     form = ContatoForm(request.POST or None)
