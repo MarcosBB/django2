@@ -2,7 +2,7 @@
  
 É um projeto Back-End feito com Python, Django e MySQL. Foi o Segundo projeto django Desenvolvido durante o curso [Programação Web com Python e Django Framework: Essencial](https://www.udemy.com/course/programacao-web-com-django-framework-do-basico-ao-avancado/) disponível na [Udemy](https://www.udemy.com/).
 
-Para testar o site [Clicke aqui](https://django2-mbb.herokuapp.com/).
+Para testar o site [Clicke aqui](https://django2-mbb-via-github.herokuapp.com/).
 
 ![image](https://user-images.githubusercontent.com/50207805/120393799-e8ee0600-c308-11eb-9900-93fc141cc603.png)
 ![image](https://user-images.githubusercontent.com/50207805/120393941-25b9fd00-c309-11eb-952c-28fb2f5edc71.png)
